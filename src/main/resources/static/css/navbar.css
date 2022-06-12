@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.title{ color: #E04D2E}
+.col-megamenu > ul > li > a { 
+	color: #000000;
+	text-decoration:none;}
+.col-megamenu > ul > li > a:hover {
+	color: #FFD400;
+}
+
+.nav-link{
+	font-weight: bold;
+}
+
+#main_nav ul li a:hover{
+	color: #FFD400;
+}
+
+
+
+/*----------------------------*/
+.navbar .megamenu{ padding: 2rem; }
+
+.screen-darken{
+  content: ''; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  pointer-events: none;
+  z-index:10; opacity:1; 
+  visibility:visible;
+  position: fixed;
+}
+
+.navbar{
+  position: relative;
+  z-index: 15;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:0; right:0; width:100%; margin-top:0;}
+	
+}	
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+		overflow-y: auto;
+	    max-height: 90vh;
+	    margin-top:10px;
+	}
+}
+
+@media(max-width: 576px){
+	.py-xs {
+		padding-bottom:0.5rem;
+		padding-top:0.5rem;
+	}
+}
+/* ============ mobile view .end// ============ */
+
+
